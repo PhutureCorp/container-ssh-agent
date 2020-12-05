@@ -1,7 +1,7 @@
-# `ssh-agent` GitHub Action
+# `container-ssh-agent` GitHub Action
 
 This action 
-* starts the `ssh-agent`, 
+* starts the `container-ssh-agent`, 
 * exports the `SSH_AUTH_SOCK` environment variable, 
 * loads a private SSH key into the agent and
 * configures `known_hosts` for GitHub.com.
@@ -29,9 +29,10 @@ jobs:
             - actions/checkout@v1
             # Make sure the @v0.4.1 matches the current version of the
             # action 
-            - uses: webfactory/ssh-agent@v0.4.1
+            - uses: PhutureCorp/container-ssh-agent@v0.0.1
               with:
                   ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  home-dir: "/root"
             - ... other steps
 ```
 5. If, for some reason, you need to change the location of the SSH agent socket, you can use the `ssh-auth-sock` input to provide a path.
@@ -44,7 +45,7 @@ You can set up different keys as different secrets and pass them all to the acti
 
 ```yaml
 # ... contens as before
-            - uses: webfactory/ssh-agent@v0.4.1
+            - uses: PhutureCorp/container-ssh-agent@v0.0.1
               with:
                   ssh-private-key: |
                         ${{ secrets.FIRST_KEY }}
@@ -131,11 +132,12 @@ As a note to my future self, in order to work on this repo:
 
 ## Credits, Copyright and License
 
-This action was written by webfactory GmbH, Bonn, Germany. We're a software development
-agency with a focus on PHP (mostly [Symfony](http://github.com/symfony/symfony)). If you're a 
-developer looking for new challenges, we'd like to hear from you! 
+This action was adapted from an action that was written by webfactory GmbH, Bonn, Germany. 
+They are a software development agency with a focus on PHP (mostly [Symfony](http://github.com/symfony/symfony)). 
+They are apparently looking for developers looking for new challenges, and they would like to hear from you! 
 
 - <https://www.webfactory.de>
 - <https://twitter.com/webfactory>
 
+Copyright 2020 PhutureCorp Inc.
 Copyright 2019 – 2020 webfactory GmbH, Bonn. Code released under [the MIT license](LICENSE).
