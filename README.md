@@ -27,7 +27,7 @@ jobs:
         ...
         steps:
             - actions/checkout@v1
-            # Make sure the @v0.4.1 matches the current version of the
+            # Make sure the @v0.0.1 matches the current version of the
             # action 
             - uses: PhutureCorp/container-ssh-agent@v0.0.1
               with:
