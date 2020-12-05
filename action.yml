@@ -4,9 +4,12 @@ inputs:
     ssh-private-key:
         description: 'Private SSH key to register in the SSH agent'
         required: true
-outputs:
     ssh-auth-sock:
+        required: false
         description: 'Where to place the SSH Agent auth socket'
+    home-dir:
+        required: false
+        description: 'Explicit home directory to support containers'
 runs:
     using: 'node12'
     main: 'dist/index.js'
