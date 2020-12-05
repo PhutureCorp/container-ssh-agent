@@ -121,7 +121,7 @@ const fs = __webpack_require__(747);
 
 try {
 
-    const home = process.env['HOME'];
+    const home = '/root'//process.env['HOME'];
     const homeSsh = home + '/.ssh';
 
     const privateKey = core.getInput('ssh-private-key');
