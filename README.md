@@ -139,5 +139,5 @@ They are apparently looking for developers looking for new challenges, and they 
 - <https://www.webfactory.de>
 - <https://twitter.com/webfactory>
 
-Copyright 2020 PhutureCorp Inc.
-Copyright 2019 – 2020 webfactory GmbH, Bonn. Code released under [the MIT license](LICENSE).
+* Copyright 2020 PhutureCorp Inc.
+* Copyright 2019 – 2020 webfactory GmbH, Bonn. Code released under [the MIT license](LICENSE).
