@@ -1,4 +1,4 @@
-name: 'container-ssh-agent'
+name: 'Container SSH Agent'
 description: 'Run `container-ssh-agent` and load an SSH key to access other private repositories inspired by ssh-agent'
 inputs:
     ssh-private-key:
