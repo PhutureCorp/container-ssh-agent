@@ -1,5 +1,5 @@
 [![GitHub release](https://img.shields.io/github/release/PhutureCorp/container-ssh-agent.svg?style=flat-square)](https://github.com/PhutureCorp/container-ssh-agent/releases/latest)
-[![GitHub marketplace](https://img.shields.io/badge/marketplace-PhutureCorp--container--ssh--agent-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/container-ssh-agent)
+[![GitHub marketplace](https://img.shields.io/badge/marketplace-container--ssh--agent-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/container-ssh-agent)
 
 # `container-ssh-agent` GitHub Action
 
