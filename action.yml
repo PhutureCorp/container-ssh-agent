@@ -1,5 +1,5 @@
 name: 'PhutureCorp/container-ssh-agent'
-description: 'Run `ssh-agent` and load an SSH key to access other private repositories inspired by ssh-agent'
+description: 'Run `container-ssh-agent` and load an SSH key to access other private repositories inspired by ssh-agent'
 inputs:
     ssh-private-key:
         description: 'Private SSH key to register in the SSH agent'
